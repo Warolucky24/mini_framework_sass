@@ -1,26 +1,13 @@
-.btn
-    padding: 8px 15px
-    border: 0
-    border-radius: $border_radius
-    cursor: pointer
-    transition: background-color .3s
+// base_btn ($borderColor, $backgroundColor, $backgroundHover, color)
 
 .btn_primary
-    background-color: $primary
-    &:hover
-        background-color: $primary_hover_btn
+    @include base_btn($primary, $primary, $primary_hover_btn, black)
 
 .btn_danger
-    background-color: $danger_2
-    &:hover
-        background-color: $danger_1
+    @include base_btn($primary, $danger_2, $danger_1, black)
 
 .btn_warning
-    background-color: $warning_2
-    &:hover
-        background-color: $warning_1
+    @include base_btn($primary,  $warning_2, $warning_1, black)
 
 .btn_success
-    background-color: $success_2
-    &:hover
-        background-color: $success_1
+    @include base_btn($primary, $success_2, $success_1, black)
