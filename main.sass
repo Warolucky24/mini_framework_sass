@@ -1,30 +1,37 @@
 //variable
-@import "abstracts/variable"
+@import "abstracts/_variable"
 //font
-@import "base/typography"
+@import "base/fonts"
 //reset
-@import "base/reset"
+@import "base/_reset"
 
 
 //Mixin
-@import "abstracts/mixin/mixin"
-@import "abstracts/mixin/btn"
-@import "abstracts/mixin/alert"
+@import
+  "abstracts/mixin/_mixin",
+  "abstracts/mixin/_btn",
+  "abstracts/mixin/_alert",
+  "abstracts/mixin/w_h"
 
 // Components
-@import "./components/btn"
-@import "./components/input"
-@import "./components/alert"
+@import "components/_btn",
+  "./components/_input",
+  "components/_alert"
 
 //layout
-@import "layout/flex"
-@import "layout/m"
-@import "layout/p"
+@import
+  "layout/flex",
+  "layout/m",
+  "layout/p",
+  "layout/width"
+
 
 // Partial
-@import "./partial/debug"
-@import "./partial/width"
+@import
+  "./partial/debug"
+
 
 //effects
-@import "./effects/underline"
-@import "./effects/btn-hover"
+@import
+  "./effects/underline",
+  "./effects/btn-hover"
