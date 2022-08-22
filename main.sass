@@ -1,16 +1,30 @@
-//Font
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap')
 //variable
-@import "./variable.sass"
-//Import
-@import "./import.sass"
+@import "abstracts/variable"
+//font
+@import "base/typography"
+//reset
+@import "base/reset"
 
-//Reset
-*
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-  font-family: 'Ubuntu', sans-serif
 
-ul
-  list-style-type: none
+//Mixin
+@import "abstracts/mixin/mixin"
+@import "abstracts/mixin/btn"
+@import "abstracts/mixin/alert"
+
+// Components
+@import "./components/btn"
+@import "./components/input"
+@import "./components/alert"
+
+//layout
+@import "layout/flex"
+@import "layout/m"
+@import "layout/p"
+
+// Partial
+@import "./partial/debug"
+@import "./partial/width"
+
+//effects
+@import "./effects/underline"
+@import "./effects/btn-hover"
