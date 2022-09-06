@@ -1,0 +1,25 @@
+.table
+  width: 100%
+  border-collapse: collapse
+  tr
+    transition: all .4s
+    td
+      padding: 8px
+      width: 20%
+      text-align: center
+      border-left: 1px solid $secondary
+      border-right: 1px solid $secondary
+      div
+        margin: auto
+    &:last-child
+      border-bottom: 1px solid $secondary
+    th
+      width: 20%
+      border: 1px solid $secondary
+      background: $primary_2
+      text-align: center
+      padding: 10px
+      color: white
+
+  tr:nth-child(even)
+    background: $bleu_clair
